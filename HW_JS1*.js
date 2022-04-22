@@ -30,6 +30,7 @@ checkAge1 (17);
 checkAge1 (18); 
 checkAge1 (61);
 console.log('******************');
+
 //2*:Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных. И если он не Number - кидалась ошибка"
 
 const checkAge2 = function (age) 
@@ -52,9 +53,10 @@ console.log('******************');
 
 // 3**:
 //Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) пропускалось, преобразовываясь в number
+
 const checkAge3 = function (age) 
-{if (isNaN(age)) //1 вариант, if (!+age) 2 вариант,if(!Number(age)) //3 вариант 
- {   console.log("Error!!!")
+{if (isNaN(age))  //1 вариант, if (!+age) 2 вариант, if(!Number(age)) 3 вариант 
+ {  console.log("Error!!!")
  }  else if (age < age_2) {
     console.log("You don’t have access cause your age is " + age+ " It’s less then " + age_2)
  } else if (age >= age_2 && age<age_3) {
@@ -68,6 +70,7 @@ const checkAge3 = function (age)
 
 checkAge3 ("2");
 console.log('******************');
+
 // 4***: Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 
 const checkAge4 = function (age) 
