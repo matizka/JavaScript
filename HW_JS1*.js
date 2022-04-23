@@ -74,21 +74,23 @@ console.log('******************');
 // 4***: Преобразовать задание 3* таким образом, чтобы возраст вводится используя функцию prompt в привязанной верстке
 
 const checkAge4 = function (age) 
-{if (isNaN(age)) //1 вариант, if (!+age) 2 вариант,if(!Number(age)) //3 вариант
- {  alert ("Error!!!")
+{if (isNaN(age))      //1 вариант
+    //if (!+age)        2 вариант
+    //if (!Number(age)) 3 вариант
+  {  alert ("Error!!!")
     //console.log("Error!!!")
- }  else if (age < age_2) {
+  }  else if (age < age_2) {
     alert ("You don’t have access cause your age is " + age+ " It’s less then " + age_2)
     //console.log("You don’t have access cause your age is " + age+ " It’s less then " + age_2)
- } else if (age >= age_2 && age<age_3) {
+  } else if (age >= age_2 && age<age_3) {
     alert("Welcome!")
     //console.log("Welcome!")
- } else if (age>age_3) {
+  } else if (age>age_3) {
     alert("Keep calm and look Culture channel")
     //console.log("Keep calm and look Culture channel")
- } else {
+  } else {
     alert("Technical work")
     //console.log("Technical work")
- }
+  }
 };
 checkAge4 (prompt("Введите Ваш возраст"));
