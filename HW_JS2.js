@@ -59,7 +59,7 @@ const checkstr = function (stroka)
 };
 
 //checkstr (3);
-checkstr ("re");
+//checkstr ("re");
 //checkstr ("кууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууу");
 //checkstr ("222333");
 //checkstr ("рdtеn");
