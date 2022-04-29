@@ -12,35 +12,51 @@
  //8. Должна быть хотя бы одна @
  //9. Строка не должна быть пустой
  
- 
+
 const checkstr = function (stroka) 
-{if (typeof(stroka) != 'string')
-   {console.log("Введите строку")
-}   else if (stroka.length == 0) 
-   {console.log("Поле не может быть пустым") 
-}   else if (stroka.length<5)
-   {console.log("Введите не менее 5 символов")
-}   else if (stroka.length>64)
-   {console.log("Введите не больше 64 символов")
-}   else if (!/[a-zA-Zа-яА-Я]/.test(stroka)) 
-   {console.log("В строке должны быть буквы")
-}   else if (!/[A-ZА-Я]/.test(stroka)) 
-   {console.log("В строке должна быть хоть одна буква в верхнем регистре")
-}   else if (!/[0-9]/.test(stroka)) 
-   {console.log("В строке должна быть хотя бы одна цифра")
-}   else if (!stroka.includes("@")) 
-   {console.log("В строке должна быть хотя бы одна @")
-}else 
-   {console.log("Корректная строка")
-   }
+   {if (typeof(stroka) == 'string')
+      {  if   (stroka.length == 0) 
+              {console.log("Поле не может быть пустым")} 
+         else {check1=true};
+
+         if   (stroka.length<5)
+              {console.log("Введите не менее 5 символов")}
+         else {check2=true};
+         
+         if   (stroka.length>64)
+              {console.log("Введите не больше 64 символов")}
+         else {check3=true};
+         
+         if   (!/[a-zA-Zа-яА-Я]/.test(stroka)) 
+              {console.log("В строке должны быть буквы")}
+         else {check4=true};  
+          
+         if   (!/[A-ZА-Я]/.test(stroka)) 
+              {console.log("В строке должна быть хоть одна буква в верхнем регистре")}
+         else {check5=true};  
+          
+         if    (!/[0-9]/.test(stroka)) 
+               {console.log("В строке должна быть хотя бы одна цифра")}
+         else  {check6=true};  
+          
+         if    (!stroka.includes("@")) 
+               {console.log("В строке должна быть хотя бы одна @")}
+         else  {check7=true};  
+             
+         if   (check1 && check2 && check3 && check4 && check5 && check6 && check7)
+              {console.log("Корректная строка")};
+      }
+  else{
+     console.log("Введите строку")
+      }
 };
 
-checkstr (3);
-checkstr ("ку");
-checkstr ("кууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууу");
-checkstr ("222333");
-checkstr ("рdtеn");
-checkstr ("рВtеn");
-checkstr ("рВt1е2n");
-checkstr ("");
-checkstr ("Gsskk11@");
+//checkstr (3);
+//checkstr ("re");
+//checkstr ("кууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууууу");
+//checkstr ("222333");
+//checkstr ("рdtеn");
+//checkstr ("рВtеn");
+//checkstr ("рВt1е2n");
+//checkstr ("");
+//checkstr ("Gsskk11@");
